@@ -1,5 +1,11 @@
 html {
   font-size: 10px;
+  font-family:sans-serif;
+}
+
+p {
+  font-size:1.6rem;
+  line-height: 1.5;
 }
 
 h1 {
@@ -17,3 +23,47 @@ h1 {
   font-family: "billabong";
   src: url("FontsFree-Net-Billabong.ttf");
 }
+
+.photo-grid {
+  max-width:1000px;
+  margin: 0 auto; 
+  /* 0 - vertical auto-horizontal - y & X axis */
+  display:flex;
+  /* flex-direction: column; */
+  /* align vertically in a column-line direction */
+  flex-wrap: wrap;
+  /* allows the grid to break into multiple lines if needed, which preserves its initial width*/
+}
+
+.figure {
+  flex-basis: calc(33.333% - 4rem);
+  /* Depending on our photo-grid, which is 1000px, take that and minus 33% - 4rem */
+  /* will give each figure 60% of it's container's width */
+  border: 1px solid #808080;
+  padding: 2rem;
+  flex-grow:1;
+  /* will help each container maintain the same width */
+  margin: 0 2rem 2rem 2rem;
+  /* top margin with 0 px thickness, and right, bottom, left thickness of 2 rems */
+
+}
+
+.photo {
+  width: calc(100% + 4rem);
+  margin: -2rem 0rem 0rem -2rem;
+}
+
+.button-container {
+  display:flex;
+  justify-content:center;
+}
+.remove-button {
+  flex-basis:48%;
+  color:red;
+  font-size: 15px;
+  border: 2px solid #f2f2f2;
+  line-height: 2;
+  padding:5px;
+
+}
+

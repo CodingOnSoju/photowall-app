@@ -4,9 +4,9 @@ import Photo from "./Photo";
 class Photowall extends Component {
   render() {
     return (
-      <div>
-        {this.props.posts.map((post) => (
-          <Photo post={post} />
+      <div className="photo-grid">
+        {this.props.posts.map((posts, index) => (//will display the photos in the Main.js
+          <Photo key={index}post={posts} />
         ))}
       </div>
     );
