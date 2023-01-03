@@ -1,0 +1,19 @@
+html {
+  font-size: 10px;
+}
+
+h1 {
+  font-family: "billabong";
+  text-align: center;
+  font-size: 13rem;
+  font-weight: 100;
+  margin: 2rem 0;
+  /* 2rem = 20px */
+  letter-spacing: -1px;
+  color: black;
+}
+
+@font-face {
+  font-family: "billabong";
+  src: url("FontsFree-Net-Billabong.ttf");
+}
